@@ -4,7 +4,7 @@ from sqlalchemy.dialects.postgresql import UUID
 
 class Adress(db.Model):
     __tablename__ = "adress"
-    __table_args__ = {'extend_existing': True}
+    __table_args__ = {"extend_existing": True}
 
     id = db.Column(db.Integer, primary_key=True)
     line = db.Column(db.String)
